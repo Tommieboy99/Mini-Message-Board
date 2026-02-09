@@ -3,9 +3,9 @@
     <body>
         <% messages.map((message) => { %>
             <div>
-                <h1><%= message.user %></h1>
+                <h1><%= message.username %></h1>
                 <p><%= message.text %></p>
-                <p><%= message.added %></p>
+                <p><%= message.created_at %></p>
             </div>
         <% }) %>
 
