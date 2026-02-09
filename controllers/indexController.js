@@ -12,7 +12,12 @@ async function addMessage(req, res) {
     res.redirect("/");
 }
 
+function getForm(req, res) {
+    res.render("form");
+}
+
 module.exports = {
     getMessages,
     addMessage,
+    getForm
 }
